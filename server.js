@@ -1,20 +1,15 @@
 // Loading required libaries
 const express = require('express');
-const fs = require('fs');
+
 const path = require('path');
-const api = require('./routes/index.js');
+const api = require('./routes/index');
 
 // Port to listen on
-const PORT = process.env.port || 3001;
+const PORT = process.env.PORT || 3001;
 
 // Instance of Application with Express()
 const app = express();
 
-// Routes 
-const htmlRoute = require('./routes/html_routes');
-const apiRoute = require('./routes/api_route');
-app.use('/html_routes', htmlRoute);
-app.use('/api_routes', apiRouteRoute);
 
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
@@ -34,7 +29,7 @@ app.get('/', (req, res) =>
 );
 
 // GET Route for notes
-app.get('/', (req, res) =>
+app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
