@@ -20,7 +20,7 @@ Say goodbye to scattered scraps of paper and hello to a digital note-taking expe
 
 ## Installation 
 
-To use this application simply navigate to the url below and begin keeping trakc of your daily notes and important memos:
+To use this application simply navigate to the url below and begin keeping track of your daily notes and important memos:
 
 - https://notes-taker-project-dev-d52696226e17.herokuapp.com/ 
 
